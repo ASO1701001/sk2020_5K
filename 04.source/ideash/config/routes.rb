@@ -74,9 +74,12 @@ Rails.application.routes.draw do
 
 
   # ブレインストーミング
-  # get 'idea/brainstorming/new' => 'brainstorming#new'
-  # get 'idea/brainstorming/replay' => 'brainstorming#replay'
-  # get 'idea/brainstorming/edit' => 'brainstorming#edit'
+  get 'idea/brainstorming/_process_1' => 'brainstorming#_process_1'
+  get 'idea/brainstorming/_process_2' => 'brainstorming#_process_2'
+  get 'idea/brainstorming/_process_3' => 'brainstorming#_process_3'
+  get 'idea/brainstorming/new' => 'brainstorming#new'
+  get 'idea/brainstorming/replay' => 'brainstorming#replay'
+  get 'idea/brainstorming/edit' => 'brainstorming#edit'
 
   # developmentモードでのみ以下のルーティングが行われる
   if Rails.env.development?
