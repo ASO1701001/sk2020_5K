@@ -17,6 +17,12 @@
 #                             idea_memo POST   /idea/memo(.:format)                                                                     memo#create
 #                                       GET    /idea/memo/edit/:id(.:format)                                                            memo#edit
 #                                       PATCH  /idea/memo(.:format)                                                                     memo#update
+#         idea_brainstorming__process_1 GET    /idea/brainstorming/_process_1(.:format)                                                 brainstorming#_process_1
+#         idea_brainstorming__process_2 GET    /idea/brainstorming/_process_2(.:format)                                                 brainstorming#_process_2
+#         idea_brainstorming__process_3 GET    /idea/brainstorming/_process_3(.:format)                                                 brainstorming#_process_3
+#                idea_brainstorming_new GET    /idea/brainstorming/new(.:format)                                                        brainstorming#new
+#             idea_brainstorming_replay GET    /idea/brainstorming/replay(.:format)                                                     brainstorming#replay
+#               idea_brainstorming_edit GET    /idea/brainstorming/edit(.:format)                                                       brainstorming#edit
 #         rails_postmark_inbound_emails POST   /rails/action_mailbox/postmark/inbound_emails(.:format)                                  action_mailbox/ingresses/postmark/inbound_emails#create
 #            rails_relay_inbound_emails POST   /rails/action_mailbox/relay/inbound_emails(.:format)                                     action_mailbox/ingresses/relay/inbound_emails#create
 #         rails_sendgrid_inbound_emails POST   /rails/action_mailbox/sendgrid/inbound_emails(.:format)                                  action_mailbox/ingresses/sendgrid/inbound_emails#create

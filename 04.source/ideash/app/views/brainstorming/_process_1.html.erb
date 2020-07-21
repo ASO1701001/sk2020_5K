@@ -4,6 +4,8 @@
 <% @ideas.each do |f| %>
   <p><%= f.idea_name %></p>
 <% end %>
+<%= label_tag :content, 'Say something:' %>
+<%= text_field_tag :content, nil, data: { behavior: 'useridea_speaker' } %>
 
 <div class="edit_body">
   <h3 class="theme">入力されたテーマ</h3>
