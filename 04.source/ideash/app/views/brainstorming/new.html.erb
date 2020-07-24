@@ -43,21 +43,19 @@
     </div>
     <div class="ui center aligned grid">
       <div class="start-button">
-        <script>
 
-            function lock(){
-                var guard = document.createElement("div"); // div要素作成
-                guard.id = "lock"; // IDをstyle.cssで定義した名前にする
-                guard.innerHTML = "<font color=\"White\">制限時間です</font>" // 何か表示したいものがあればここに
-                document.body.appendChild(guard);  // div要素追加
-                setTimeout("unLock()", 3000);  // 2秒後にunLock()を呼ぶ
-            }
-            function unLock(){
-                document.body.removeChild(document.getElementById("lock"));  // lockのdiv要素を削除
-            }
+
+        <script>
+          //function transition() {
+              //location.href= "http://localhost:3000/idea/brainstorming/_process_1";
+              //advancelock();
+          //}
+
         </script>
 <!--        <button class="ui black button" onclick="lock()">はじめる</button>-->
-        <input type="button" value="画面ロック" onclick="lock()">
+        <input type="button" value="はじめる(画面ロック)" onclick="transition()">
+
+
       </div>
     </div>
   </div>
