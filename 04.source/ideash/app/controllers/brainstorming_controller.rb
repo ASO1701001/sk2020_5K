@@ -10,6 +10,7 @@ class BrainstormingController < ApplicationController
 
   def _process_1
     @ideas = Idea.all
+    @idea_categories = IdeaCategory.all
   end
 
   def _process_2

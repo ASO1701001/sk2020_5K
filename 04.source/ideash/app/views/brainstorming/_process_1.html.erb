@@ -21,9 +21,7 @@
     // }
 </script>
 
-
 <script>
-    console.log(time1);
     // jQueryでSleepする方法
     function wait(sec) {
         // jQueryのDeferredを作成します。
@@ -35,7 +33,8 @@
         return objDef.promise();
     };
     // waitはPromiseを返すので、doneをメソッド・チェーンできます。
-    wait(time1).done(function () {
+    //wait(time1)
+    wait(5).done(function () {
         var guard = document.createElement("div"); // div要素作成
         guard.id = "lock"; // IDをstyle.cssで定義した名前にする
         guard.innerHTML = "<font color=\"White\">制限時間</font>" // 何か表示したいものがあればここに
